@@ -49,7 +49,7 @@ const Navbar = () => {
           )}
         </button>
         <div className="flex items-center">
-          <div className="font-bold text-xl  ml-3">INVESTORHUB</div>
+          <div className="font-bold text-xl  ml-3">INVESTOR RECOMENDER SYSTEM</div>
           <div className="hidden tablet:inline-block tablet:right-28 tablet:absolute ">
             <ul className="my-8 flex">
               <li className="mx-4">
@@ -74,7 +74,7 @@ const Navbar = () => {
       </nav>
       {state && (
         <>
-          <div className=" min-h-full overflow-y-hidden min-w-full overflow-hidden  text-center text-lg font-semibold text-olive col-gap-9">
+          <div className=" tablet:hidden min-h-screen overflow-y-hidden min-w-full overflow-hidden  text-center text-lg font-semibold text-olive col-gap-9">
             <ul className="my-8">
               <li className="my-4">
                 <Link href="/">Home</Link>
