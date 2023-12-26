@@ -18,6 +18,7 @@ module.exports = {
         'olive': '#808000',
       },
       screens: {
+        'mobile' :'0px',
         'tablet': '640px',
         // => @media (min-width: 640px) { ... }
   

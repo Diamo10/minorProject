@@ -23,7 +23,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              class="w-6 h-6 tablet:hidden"
             >
               <path
                 stroke-linecap="round"
@@ -48,28 +48,53 @@ const Navbar = () => {
             </svg>
           )}
         </button>
-        <div className="font-bold text-xl mt-4 ml-3">INVESTORHUB</div>
-            <div className=" flex-between font-bold  bg-white text-olive p-[9px] rounded-lg absolute right-1 my-2 hover:font-extrabold cursor-pointer">
-              Get Started
-            </div>
-      </nav>
-      {
-        state && (
-          <>
-          <div className="bg-col min-h-full overflow-y-hidden min-w-full overflow-hidden  text-center text-white col-gap-9">
-            <ul className="my-8">
-              <li className="my-4"><Link href="/">Home</Link></li>
-              <li className="my-4"><Link href="/about">About</Link></li>
-              <li className="my-4"><Link href="/contact">contact</Link></li>
+        <div className="flex items-center">
+          <div className="font-bold text-xl  ml-3">INVESTORHUB</div>
+          <div className="hidden tablet:inline-block tablet:right-28 tablet:absolute ">
+            <ul className="my-8 flex">
+              <li className="mx-4">
+                <Link href="/">Home</Link>
+              </li>
+              <li className="mx-4">
+                <Link href="/about">About</Link>
+              </li>
+              <li className="mx-4">
+                <Link href="/contact">contact</Link>
+              </li>
+              <li className="mx-4">
+                <Link href="/login">Login</Link>
+              </li>
             </ul>
-            <div className=" flex-between font-bold  bg-white text-olive p-[9px] mx-auto rounded-lg mt-[500px]  hover:font-extrabold cursor-pointer">
-              LOGIN
+          </div>
+
+          <div className=" flex-between font-bold  bg-white text-olive p-[9px] rounded-lg absolute right-1 my-2 hover:font-extrabold cursor-pointer">
+            Get Started
+          </div>
+        </div>
+      </nav>
+      {state && (
+        <>
+          <div className=" min-h-full overflow-y-hidden min-w-full overflow-hidden  text-center text-lg font-semibold text-olive col-gap-9">
+            <ul className="my-8">
+              <li className="my-4">
+                <Link href="/">Home</Link>
+              </li>
+              <li className="my-4">
+                <Link href="/about">About</Link>
+              </li>
+              <li className="my-4">
+                <Link href="/contact">contact</Link>
+              </li>
+              <li className="my-4">
+                <Link href="/login">Login</Link>
+              </li>
+            </ul>
+            <div className=" w-full flex font-bold  bg-olive text-white p-[9px] rounded-lg  hover:font-extrabold cursor-pointer absolute bottom-2 justify-center">
+              SIGNUP
             </div>
           </div>
-          </>
-
-        )
-      }
+        </>
+      )}
     </>
   );
 };
