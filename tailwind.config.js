@@ -16,6 +16,7 @@ module.exports = {
         'col' : '#BE3455',
         'white' : '#FFFFFF',
         'olive': '#808000',
+        'gray':'#808080',
       },
       screens: {
         'mobile' :'0px',
