@@ -49,7 +49,7 @@ const Navbar = () => {
           )}
         </button>
         <div className="flex items-center">
-          <div className="font-bold text-xl  ml-3">INVESTOR RECOMENDER SYSTEM</div>
+          <div className="font-bold text-[12px]  ml-3">INVESTOR RECOMENDER SYSTEM</div>
           <div className="hidden tablet:inline-block tablet:right-28 tablet:absolute ">
             <ul className="my-8 flex">
               <li className="mx-4">
