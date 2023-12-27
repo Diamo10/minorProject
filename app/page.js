@@ -19,12 +19,13 @@ export default function Home() {
           width={1920}
           height={1080}
           layout="responsive"
+          className="opacity-80"
         />
-        <div className="text-olive font-bold text-2xl mx-4 tablet:text-6xl tablet:mt-8">
+        <div className="text-olive font-bold text-2xl mx-4 tablet:text-6xl  tablet:relative tablet:mt-[-190px]">
           Precision in Every Investment.
         </div>
-        <div className="text-olive font-semibold text-xl mx-4 tablet:text-5xl tablet:mt-4">{`Your success is our algorithm's mission`}</div>
-        <div className="mx-4 tablet:text-3xl tablet:mt-4 tablet:mb-3">
+        <div className="text-olive font-semibold text-xl mx-4 tablet:text-5xl tablet:mt-4 tablet:relative">{`Your success is our algorithm's mission`}</div>
+        <div className="mx-4 tablet:text-3xl tablet:mt-4 tablet:mb-3 tablet:relative">
           Let our recommendation system guide you to a prosperous financial
           future.
         </div>
@@ -158,7 +159,7 @@ export default function Home() {
               className="items-center"
             />
           </div>
-          <div className=" items-center">
+          <div className=" tablet:mt-24">
             <span className="font-bold flex text-xl text-center justify-center mt-[24px]">
               About us
             </span>
@@ -179,15 +180,26 @@ export default function Home() {
       <div className="border-b border-gray my-5 mx-4"></div>
 
       {/* contact section */}
-      <section id="contact" className="">
+      <section id="contact" className="mx-6 tablet:mx-[240px]">
         <p className="text-center font-bold text-xl mt-4">Contact us</p>
-        <div className="grid grid-cols-1 tablet:grid-cols-2 text-center mx-6">
-          <div className=""> First Name</div>
-          <div className=""> Second Name</div>
+        <div className="grid grid-cols-1 tablet:grid-cols-2 tablet:gap-3 ">
+          <div className="">
+            <label for="fname" className="">First Name</label><br/>
+            <input type="text" name="fname" className=" border border-gray text-black rounded-lg focus:ring-black block w-full p-2.5 placeholder:text-gray " placeholder="First Name" required/>
+          </div>
+          <div className=""> <label for="lname" className="">Last Name</label><br/>
+            <input type="text" name="lname" className=" border border-gray text-black rounded-lg focus:ring-black block w-full p-2.5 placeholder:text-gray " placeholder="Last Name" required/>
+            </div>
 
         </div>
-        <div className="mx-6 text-center"> Email</div>
-        <div className="mx-6 text-center"> Message</div>
+        <div className=""> <label for="email" className="">Email</label><br/>
+            <input type="email" name="email" className=" border border-gray text-black rounded-lg hover:ring-red-700 focus:ring-black block w-full p-2.5 placeholder:text-gray " placeholder="exmaple@email.com" required/>
+            </div>
+            <div className=""> 
+            <label for="msg" className="">Message</label><br/>
+            <textarea name="msg" className="textarea border border-gray  text-black rounded-lg block w-full p-2.5 mb-6" placeholder="Message"></textarea>
+            </div>
+
         <div className="font-bold text-center mx-[80px] tablet:mx-[250px] bg-olive text-white p-[9px] rounded-lg  hover:font-extrabold cursor-pointer">
             Send Message
           </div>
@@ -201,9 +213,7 @@ export default function Home() {
       </section>
 
 
-      <div className="border-b border-gray my-5 mx-4"></div>
-
-      <section className="text-center" id="">
+      <section className="text-center bg-olive text-white mt-12 " id="">
         <footer className="footer footer-center p-4 bg-base-300 text-base-content">
           <aside>
             <p>Copyright © 2023 - All right reserved by Investor Recommendor System</p>
