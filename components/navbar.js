@@ -49,7 +49,7 @@ const Navbar = () => {
           )}
         </button>
         <div className="flex items-center">
-          <div className="font-bold text-[12px]  ml-3">INVESTOR RECOMENDER SYSTEM</div>
+          <div className="font-bold text-[12px]  ml-3">Investor RECOMENDER SYSTEM</div>
           <div className="hidden tablet:inline-block tablet:right-28 tablet:absolute ">
             <ul className="my-8 flex">
               <li className="mx-4">
@@ -66,10 +66,8 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-
-          <div className=" flex-between font-bold  bg-white text-olive p-[9px] rounded-lg absolute right-1 my-2 hover:font-extrabold cursor-pointer">
-            Get Started
-          </div>
+          <Link href="/getstarted"><div className=" flex-between font-bold bg-white text-olive p-[9px] rounded-lg absolute right-1 mt-[-20px] mr-[8px] hover:font-extrabold cursor-pointer">Get Started
+          </div></Link>
         </div>
       </nav>
       {state && (
@@ -89,7 +87,7 @@ const Navbar = () => {
                 <Link href="/login">Login</Link>
               </li>
             </ul>
-            <div className=" w-full flex font-bold  bg-olive text-white p-[9px] rounded-lg  hover:font-extrabold cursor-pointer absolute bottom-2 justify-center">
+            <div className=" w-full flex font-bold bg-olive text-white p-[9px] rounded-lg  hover:font-extrabold cursor-pointer absolute bottom-2 justify-center">
               SIGNUP
             </div>
           </div>
