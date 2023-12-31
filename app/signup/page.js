@@ -34,7 +34,7 @@ const Signup = () => {
             <div className="text-gray">{`Your success is our algorithm's mission.`}</div>
             <div className="border-b border-gray my-5 mx-4"></div>
           {SignupFields.map((field) => (
-            <div className="my-2">
+            <div className="my-2" key={field.id}>
               <div key={field.id} className="">
                 <label htmlFor={field.labelFor}>{field.labelText}</label>
                 <input
