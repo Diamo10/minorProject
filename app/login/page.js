@@ -30,7 +30,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center"> <div className="text-gray">Don't Have an account?<span className="text-olive ml-2 font-semibold">Signup</span></div></div>
+      <div className="flex justify-center"> <div className="text-gray">{`Don't Have an account?`}<span className="text-olive ml-2 font-semibold">Signup</span></div></div>
 
 
     
