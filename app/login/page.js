@@ -10,7 +10,7 @@ const Login = () => {
       {/* container */}
       <div className="flex justify-center p-4 mt-[132px]">
         {/* card */}
-        <div className=" border border-olive rounded-2xl p-4 min-w-[85%] shadow-lg">
+        <div className=" border border-olive rounded-2xl p-4 min-w-[85%] shadow-2xl">
           {/* text */}
           <div className="">
             <div className="text-lg font-extrabold ">LOGIN</div>
