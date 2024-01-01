@@ -1,22 +1,28 @@
 export const uploadIdeaForm = [
     {
-        labelText:"Title",
-        labelFor:"title",
-        id:"title",
-        name:"title",
-        type:"text",
+        labelText:"Description",
+        labelFor:"desc",
+        id:"desc",
+        name:"desc",
+        type:"textarea",
+        multiple:false,
         isRequired:true,
-        placeholder:"Enter your title here..."
+        placeholder:"Describe your idea...",
+        className:" p-4 rounded-3xl min-w-full h-[300px] bg-white mt-2"
     },
     {
-        labelText:"Summary",
-        labelFor:"summary",
-        id:"summary",
-        name:"summary",
-        type:"textarea",
+        labelText:"File",
+        labelFor:"file",
+        id:"file",
+        name:"file",
+        type:"file",
+        multiple:true,
         isRequired:true,
-        placeholder:"Summarize your idea here..."
+        placeholder:"",
+        className:"relative p-4 rounded-3xl min-w-full  bg-white mt-2"
     },
+    
+
 
 ];
 
