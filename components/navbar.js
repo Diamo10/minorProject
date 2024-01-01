@@ -87,9 +87,7 @@ const Navbar = () => {
                 <Link href="/login">Login</Link>
               </li>
             </ul>
-            <div className=" w-full flex font-bold bg-olive text-white p-[9px] rounded-lg  hover:font-extrabold cursor-pointer absolute bottom-2 justify-center">
-              SIGNUP
-            </div>
+            <Link href="/signup"><div className=" w-full flex font-bold bg-olive text-white p-[9px] rounded-lg  hover:font-extrabold cursor-pointer absolute bottom-2 justify-center">SIGNUP</div></Link>
           </div>
         </>
       )}

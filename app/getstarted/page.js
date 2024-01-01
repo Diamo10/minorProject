@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 const GetStarted = () => {
@@ -74,7 +75,7 @@ const GetStarted = () => {
         <div className="bg-olive rounded-lg px-8 py-2 mt-8 text-white font-semibold cursor-pointer hover:font-bold"> Create Account </div>
       </div>
       <div className="flex justify-center mt-4">
-        <div className="text-gray">Already Have a account?<span className="text-olive ml-2 font-semibold">Login</span></div>
+        <div className="text-gray">Already Have a account?<span className="text-olive ml-2 font-semibold"><Link href="/login">Login</Link></span></div>
       </div>
       
 
