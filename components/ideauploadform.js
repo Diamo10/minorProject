@@ -15,6 +15,7 @@ const Ideauploadform = () => {
             
         )
     }
+    console.log("hello")
 
 
 
